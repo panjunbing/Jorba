@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" 
+        android:focusable="false" 
+        android:background="@color/transparent">
+
+        <ImageView
+            android:id="@+id/imageView_dating_chat_head"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_launcher" 
+            android:contentDescription="@string/contentDescription_head"
+             android:focusable="false" />
+
+        <TextView
+            android:id="@+id/textView_dating_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/imageView_dating_chat_head"
+            android:background="@drawable/textview_dating_room_right" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp" 
+        android:background="@color/transparent">
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+
+    <!--
+         Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels.
+    -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="btn_leftText" format="string" />
+        <attr name="btn_rightText" format="string" />
+        <attr name="tv_title" format="string" />
+        <attr name="left_drawable" format="reference"/>
+        <attr name="right_drawable" format="reference"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView_daingHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" 
+            android:contentDescription="@string/contentDescription_head"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imageView_daingHead"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView_datingUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名" />
+
+            <TextView
+                android:id="@+id/textView_datingTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时间" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_datingPeopleCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="人数" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView_datingContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="内容" />
+
+    <Button
+        android:id="@+id/button_joinRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加入房间" />
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity" >
+
+    <com.jorba.other.NavigationBar
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="45dip" >
+    </com.jorba.other.NavigationBar>
+
+    <EditText
+        android:id="@+id/editText_regist_userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="请输入账号"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_regist_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_regist_userName"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editeText_regist_passworda2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_regist_password"
+        android:ems="10"
+        android:hint="请再次输入密码"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button_regist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editeText_regist_passworda2"
+        android:text="注册" />
+
+    <ImageView
+        android:id="@+id/imageView_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText_regist_userName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/logo" 
+        android:contentDescription="@string/contentDescription_head"/>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativelayout_adventure"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdventureActivity" 
+     android:background="#66ff00">
+
+    <Button
+        android:id="@+id/button_exit4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/exit_logo" />
+
+</RelativeLayout>

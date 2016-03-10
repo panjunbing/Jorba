@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayoutMain1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bf3e28"
+    tools:context=".WerewolfActivity" >
+
+    <Button
+        android1:id="@+id/button_exit"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentRight="true"
+        android1:layout_alignParentTop="true"
+        android:background="@drawable/exit_logo" />
+   
+</RelativeLayout>

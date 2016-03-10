@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatingChatActivity" >
+
+    <com.jorba.other.NavigationBar
+        android:id="@+id/navigationBar_dating_chat"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+    </com.jorba.other.NavigationBar>
+
+    <ListView
+        android:id="@+id/listView_dating_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout_dating_chat_bottom"
+        android:layout_below="@+id/navigationBar_dating_chat"
+        android:divider="@null" >
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_dating_chat_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_dating_chat_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/layout_dating_chat_in" >
+
+            <Button
+                android:id="@+id/button_dating_chat_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:text="语" />
+
+            <Button
+                android:id="@+id/button_dating_chat_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="发送" />
+
+            <Button
+                android:id="@+id/button_dating_chat_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/button_dating_chat_send"
+                android:background="@drawable/button_dating_chat_face" />
+
+            <EditText
+                android:id="@+id/edit_dating_chat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/button_dating_chat_face"
+                android:layout_toRightOf="@id/button_dating_chat_voice"
+                android:background="@drawable/edittext_dating_chat"
+                android:hint="@null" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/add_tool"
+            layout="@layout/send_msg_tool"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

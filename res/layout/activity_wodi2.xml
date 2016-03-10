@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout_wodi2"
+    tools:context=".UndercoverActivity2" 
+     android:background="#cccccc">
+
+      <Button
+          android:id="@+id/button_exit2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentTop="true"
+          android:background="@drawable/exit_logo" />
+
+</RelativeLayout>

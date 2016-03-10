@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".AboutUsActivity" >
+
+    <com.jorba.other.NavigationBar
+        android:id="@+id/navigationBar1"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentTop="true" >
+    </com.jorba.other.NavigationBar>
+
+    <ImageView
+        android:id="@+id/imageView_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/about_us" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="作者：潘俊冰、罗佳浩" />
+
+</RelativeLayout>
